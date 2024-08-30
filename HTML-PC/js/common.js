@@ -116,6 +116,10 @@ var swiperSmallThumb = new Swiper(".thumb-small", {
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
+    navigation: {
+        nextEl: '.thumb-small .swiper-button-next',
+        prevEl: '.thumb-small .swiper-button-prev',
+    },
 });
 var swiperBigThumb = new Swiper(".thumb-big", {
     spaceBetween: 15,
