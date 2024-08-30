@@ -48,14 +48,14 @@ const swiperClient = new Swiper('.swiper-client', {
     loop: false,
     pagination: false,
     navigation: false,
-    slidesPerView: 2,
+    slidesPerView: 3,
     spaceBetween: 8,
     breakpoints: {
         540: {
-            slidesPerView: 2,
+            slidesPerView: 3,
         },
         768: {
-            slidesPerView: 3.5,
+            slidesPerView: 4.5,
         },
         992: {
             slidesPerView: 6.5,
@@ -92,6 +92,21 @@ $(function () {
     });
     $('.list-tab-menu .sub-menu').on('click', function () {
         $(this).toggleClass('active');
+    });
+    // stiky menu
+    var stickyElements = $('.sticky');
+    if (stickyElements.length > 0) {
+        Stickyfill.add(stickyElements);
+    }
+    $("<div id='menu_before'></div>").insertBefore(".header");
+    $(window).scroll(function () {
+        var top_start = $("#menu_before").position().top + 0;
+        if ($(window).scrollTop() > top_start) {
+            $('.header').addClass('pin');
+        } else if ($(window).scrollTop() <= top_start) {
+
+            $('.header').removeClass('pin');
+        }
     });
 });
 

@@ -50,6 +50,7 @@ a {
 
     &:hover {
         opacity: 0.8;
+        text-decoration: none;
     }
 }
 
@@ -68,7 +69,10 @@ input {
     border-radius: 24px;
     border: 1px solid #EBEBEB;
 }
-
+.menu_before{
+    width: 100%;
+    height: 1px;
+}
 button,
 .btn {
     border: none;
@@ -205,7 +209,7 @@ button,
             border-radius: 50%;
 
             a {
-                color: var(--color-base);
+                color: #7C8087;
                 display: block;
             }
 
@@ -234,7 +238,7 @@ button,
 
     .xemthem {
         width: 100%;
-        background: #1F2549;
+        background: var(--color-base);
         color: #FCFCFC;
         text-align: center;
         height: 40px;
@@ -261,7 +265,9 @@ button,
     &.thumb-news {
         padding-bottom: 60%;
     }
-
+    &.thumb-product {
+        padding-bottom: 100%;
+    }
     img {
         -o-object-fit: cover;
         object-fit: cover;
@@ -471,19 +477,17 @@ button,
         margin: 0;
         padding: 0;
         list-style: none;
-        background-color: #fcfcfc;
-
+        border-radius: 16px;
         li {
             margin: 0;
-            padding: 12px 0;
+            padding: 5px 0;
             text-indent: 15px;
-            border-top: 1px solid #E8E8E8;
             transition: all 0.2s ease-in;
-
-
+            color: #222222;
+            background: #fff;
             &:hover,
             &.is-selected {
-                background: #CEE5FF;
+                color: var(--color-base);
             }
 
             &[rel="hide"] {
