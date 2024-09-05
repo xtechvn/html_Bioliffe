@@ -25,7 +25,8 @@ const swiperADS = new Swiper('.banner-cat', {
         992: {
             slidesPerView: 4,
         }
-    }
+    },
+    
 });
 
 const swiperAds = new Swiper('.swiper-banner-ads', {
@@ -81,7 +82,11 @@ const swiperFlash = new Swiper('.section-flashsale .product-slide', {
         1400: {
             slidesPerView: 5,
         }
-    }
+    },
+    navigation: {
+        nextEl: '.product-slide .swiper-button-next',
+        prevEl: '.product-slide .swiper-button-prev',
+    },
 });
 $(function () {
     $('.btn-filter').on('click', function () {

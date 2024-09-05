@@ -84,7 +84,7 @@
     }
 }
 .banner-cat {
-    padding: 80px;
+    padding: 80px 0;
     padding-bottom: 20px;
     .swiper-slide{
         border-radius: 16px;
@@ -102,7 +102,7 @@
         }
         .title{
             color:  #252B37;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 700;
             line-height: 150%;
         }
@@ -158,6 +158,7 @@
     transition: all 0.5s ease-in-out;
     padding-bottom: 40px;
     position: relative;
+    height: 100%;
     .box-thumb{
         transition: all 0.5s ease-in-out;
     }
@@ -332,6 +333,12 @@
                 position: relative;
                 top: 4px;
             }
+        }
+    }
+    .list-product-sale{
+        position: relative;
+        .swiper-slide{
+            height: initial;
         }
     }
 
@@ -2616,5 +2623,11 @@
             font-weight: 700;
         }
         
+    }
+}
+.section-about{
+    .banner img{
+        display: block;
+        width: 100%;
     }
 }
