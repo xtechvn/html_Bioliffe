@@ -2574,6 +2574,7 @@
     }
 }
 .section-contact{
+    background: #fff;
     img{
         width: 100%;
     }
@@ -2626,10 +2627,11 @@
     }
 }
 .section-about{
+    background: #fff;
     color: #51555F;
     font-size: 16px;
     line-height: 150%; 
-    .banner img{
+    .banner{
         display: block;
         width: 100%;
     }
