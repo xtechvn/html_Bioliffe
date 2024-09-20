@@ -29,6 +29,9 @@
                     width: 150px;
                 }
             }
+            .white{
+                display: none;
+            }
         }
         .navbar-nav{
             font-size: 18px;
@@ -93,10 +96,22 @@
         a{
             color: #fff !important;
         }
+        .navbar{
+            .logo{
+                .green{
+                    display: none;
+                }
+                .white{
+                    display: block;
+                }
+            }
+        }
         .btn{
             background-color: #fff !important;
             color: var(--color-base) !important;
         }
+        
+        
     }
 }
 .homepage{
@@ -124,6 +139,16 @@
             background-color: #fff !important;
             color: var(--color-base) !important;
         }
+        .navbar{
+            .logo{
+                .green{
+                    display: none;
+                }
+                .white{
+                    display: block;
+                }
+            }
+        }
         a{
             color: #fff !important;
         }
@@ -144,6 +169,16 @@
                     color: #fff;
                 }
                 border: 1px solid #fff;
+            }
+            .navbar{
+                .logo{
+                    .green{
+                        display: none;
+                    }
+                    .white{
+                        display: block;
+                    }
+                }
             }
             a{
                 color: #fff !important;
