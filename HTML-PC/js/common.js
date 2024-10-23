@@ -84,8 +84,8 @@ const swiperFlash = new Swiper('.section-flashsale .product-slide', {
         }
     },
     navigation: {
-        nextEl: '.product-slide .swiper-button-next',
-        prevEl: '.product-slide .swiper-button-prev',
+        nextEl: '.section-flashsale .swiper-button-next',
+        prevEl: '.section-flashsale .swiper-button-prev',
     },
 });
 $(function () {
